@@ -8,35 +8,8 @@ import {
   LogOut,
   LayoutDashboard,
 } from "lucide-react";
-import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
-
-const MySwal = withReactContent(Swal);
 
 export default function Sidebar({ onLogout }) {
-  const handleLogout = () => {
-    MySwal.fire({
-      title: "Are you sure?",
-      text: "You’ll be logged out of your account!",
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonColor: "#f43f5e",
-      cancelButtonColor: "#3b82f6",
-      confirmButtonText: "Yes, logout",
-      background: "#fef2f2",
-    }).then((result) => {
-      if (result.isConfirmed) {
-        onLogout();
-        MySwal.fire({
-          title: "Logged Out!",
-          text: "See you soon 👋",
-          icon: "success",
-          confirmButtonColor: "#3b82f6",
-        });
-      }
-    });
-  };
-
   const navItems = [
     { path: "/dashboard/", label: "Job Posted", icon: <Briefcase size={18} />, color: "from-sky-400 to-blue-500" },
     { path: "/dashboard/post", label: "Post Job", icon: <PlusCircle size={18} />, color: "from-green-400 to-emerald-500" },
@@ -81,7 +54,7 @@ export default function Sidebar({ onLogout }) {
 
       {/* Logout Button */}
       <button
-        onClick={handleLogout}
+        onClick={onLogout}
         className="flex items-center justify-center gap-2 mt-8 py-2 bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 rounded-lg text-white font-semibold transition-all duration-300 shadow-md hover:shadow-lg"
       >
         <LogOut size={18} />

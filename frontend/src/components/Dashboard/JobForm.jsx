@@ -105,7 +105,7 @@ export default function JobForm({ onSaved }) {
         </div>
 
         <button
-          type="submit"
+          type="submit"a
           className="py-3 mt-3 bg-gradient-to-r from-sky-600 to-blue-600 text-white rounded-lg font-semibold hover:from-sky-700 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-xl transform hover:scale-[1.02]"
         >
           ✨ Submit Job
