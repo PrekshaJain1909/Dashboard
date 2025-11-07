@@ -1,0 +1,4 @@
+1. Backend: cd backend && npm install && create .env from .env.example then npm run dev
+2. Frontend: cd frontend && npm install && npm run dev
+
+Backend runs on 5000, frontend on 5173 by Vite default.
