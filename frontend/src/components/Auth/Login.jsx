@@ -83,7 +83,6 @@ export default function Login() {
               className="w-full px-5 py-3 rounded-xl bg-gray-700 border border-gray-600 placeholder-gray-400 text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all duration-300"
             />
           </div>
-
           <button
             type="submit"
             className="w-full bg-gradient-to-r from-indigo-600 to-indigo-500 text-white font-semibold py-3 rounded-xl shadow-md hover:shadow-lg hover:from-indigo-700 hover:to-indigo-600 transition-all duration-300 text-lg"
@@ -104,7 +103,7 @@ export default function Login() {
 
         <div className="mt-8 text-center">
           <p className="text-xs text-gray-500">
-            © 2025 Dawa-Ware. All Rights Reserved.
+            © 2025 Preksha Jain. All Rights Reserved.
           </p>
         </div>
       </div>
