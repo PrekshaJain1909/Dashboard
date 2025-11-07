@@ -118,7 +118,7 @@ export default function Register() {
         </p>
 
         <div className="mt-10 text-center">
-          <p className="text-xs text-gray-500">© 2025 Dawa-Ware. All Rights Reserved.</p>
+          <p className="text-xs text-gray-500">© 2025 Preksha Jain. All Rights Reserved.</p>
         </div>
       </div>
     </div>
